@@ -5,9 +5,9 @@ require "socialization/version"
 Gem::Specification.new do |s|
   s.name = "socialization"
   s.version = Socialization::VERSION
-  s.authors = ["Carl Mercier"]
-  s.email = "carl@carlmercier.com"
-  s.homepage = "https://github.com/cmer/socialization"
+  s.authors = ["Amrit Singh"]
+  s.email = "amrit0403@gmail.com"
+  s.homepage = "https://github.com/amritsingh/socialization"
   s.summary = "Easily socialize your app with Likes and Follows"
   s.description = "Socialization allows any model to Follow and/or Like any other model. This is accomplished through a double polymorphic relationship on the Follow and Like models. But you don't need to know that since all the complexity is hidden from you."
 
