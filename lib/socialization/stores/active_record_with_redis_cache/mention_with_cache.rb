@@ -54,6 +54,7 @@ module Socialization
           super(mentionable)
           Socialization::RedisCache::Mention.remove_mentionables(mentioner)
         end
+      end
     end
   end
 end
