@@ -28,11 +28,11 @@ class SocializationGenerator < Rails::Generators::Base
     copy_file "#{options[:store]}/model_mention.rb", 'app/models/mention.rb'
 
     if options[:store] == 'active_record' || options[:store] == 'active_record_with_redis_cache'
-      migration_template "#{options['active_record']}/migration_follows.rb",  'db/migrate/create_follows.rb'
+      migration_template "active_record/migration_follows.rb",  'db/migrate/create_follows.rb'
       sleep 1 # wait a second to have a unique migration timestamp
-      migration_template "#{options['active_record']}/migration_likes.rb",    'db/migrate/create_likes.rb'
+      migration_template "active_record/migration_likes.rb",    'db/migrate/create_likes.rb'
       sleep 1 # wait a second to have a unique migration timestamp
-      migration_template "#{options['active_record']}/migration_mentions.rb", 'db/migrate/create_mentions.rb'
+      migration_template "active_record/migration_mentions.rb", 'db/migrate/create_mentions.rb'
     end
   end
 end
